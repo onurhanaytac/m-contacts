@@ -1,10 +1,10 @@
 ### USER
 GET http://localhost:3000/api/v1/contacts
-
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im9udXJoYW5AdGVzdC5jb20iLCJpYXQiOjE2NDgwNDc0NzN9.UVFGOpPXQD_l23qeT7Moxcy6gBGJGjCKXDGOUWT8aQg
 
 ###
 GET http://localhost:3000/api/v1/contacts/search/1/work jane
-
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im9udXJoYW5AdGVzdC5jb20iLCJpYXQiOjE2NDgwNDc0NzN9.UVFGOpPXQD_l23qeT7Moxcy6gBGJGjCKXDGOUWT8aQg
 
 ###
 GET http://localhost:3000/api/v1/contactsByUserId/1
@@ -35,6 +35,7 @@ Content-Type: application/json
 ###
 POST http://localhost:3000/api/v1/contact
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im9udXJoYW5AdGVzdC5jb20iLCJpYXQiOjE2NDgwNDc0NzN9.UVFGOpPXQD_l23qeT7Moxcy6gBGJGjCKXDGOUWT8aQg
 
 {
     "userId": 1,

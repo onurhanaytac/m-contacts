@@ -5,7 +5,7 @@ import { LoginController } from "./login";
 import { auth } from "../middlewares";
 
 const routes = (app: Express): void => {
-  app.use("/api/v1", auth, UsersController);
+  app.use("/api/v1", UsersController);
   app.use("/api/v1", auth, ContactsController);
   app.use("/", LoginController);
 };
