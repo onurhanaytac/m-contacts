@@ -1,0 +1,34 @@
+### USER
+GET http://localhost:3000/api/v1/users
+
+
+###
+GET http://localhost:3000/api/v1/userWithContacts/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im9udXJoYW5AdGVzdC5jb20iLCJpYXQiOjE2NDgwNDYxMzF9.1_bR4Gsk_Pvx53a3mD9GQpE1glitktiyzwgJHsA_mHI
+
+###
+GET http://localhost:3000/api/v1/user/7
+
+
+###
+DELETE http://localhost:3000/api/v1/user/6
+
+
+###
+PUT http://localhost:3000/api/v1/user
+Content-Type: application/json
+
+{
+    "id": "7",
+    "password": "12345"
+}
+
+
+###
+POST http://localhost:3000/api/v1/user
+Content-Type: application/json
+
+{
+    "email": "onurhan@test.com",
+    "password": "1234"
+}
